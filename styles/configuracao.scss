@@ -1,0 +1,116 @@
+@use "global" as *;
+@use "abstracts" as *;
+@use "components" as *;
+@import "layout";
+
+
+#configuracao, #configuracao-conta, #configuracao-privacidade, #configuracao-acessibilidade, #configuracao-perfil{
+    background: var(--neutral-gray-light);
+    padding-bottom: to-rem(104);
+
+    .config-secao{
+        margin-top: to-rem(24);
+
+    }
+
+    .pre-titulo{
+        display: block;
+        padding: to-rem(12) to-rem(24);
+        text-transform: uppercase;
+        font-size: to-rem(10);
+        letter-spacing: to-rem(0.5);
+        font-weight: var(--font-w-semibold);
+        color: var(--neutral-dark);
+    }
+
+    .config-btn{
+        padding: to-rem(24);
+        background: var(--neutral-white);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #C0D9FF;
+
+        i{
+            color: var(--azul);
+        }
+
+        &__info{
+            display: flex;
+            gap: to-rem(14);
+        }
+
+        &__icon{
+            font-size: to-rem(32);
+        }
+
+        &__desc{
+            
+            h2{
+                font-size: to-rem(16);
+                margin-bottom: to-rem(4);
+                color: var(--neutral-dark);
+            }
+
+            p{
+                font-size: to-rem(13);
+                color: var(--neutral-light);
+            }
+        }
+
+        &__cta{
+            font-size: to-rem(24);
+        }
+    }
+}
+
+#configuracao-conta, #configuracao-perfil, #configuracao-privacidade{
+    background: var(--neutral-white);
+    min-height: calc(100vh - to-rem(40));
+
+    .config-conteudo{
+        padding-block: to-rem(32);
+        padding-inline: to-rem(20);
+        display: flex;
+        flex-flow: column;
+
+        h3{
+            margin-bottom: to-rem(24);
+            color: var(--neutral-light);
+        }
+
+        > p{
+            color: var(--neutral-light);
+            padding-block: to-rem(12);
+            padding-inline: to-rem(16);
+        }
+    }
+
+    .input{
+        margin-top: to-rem(24);
+
+        input{
+            border-color: var(--border);
+        }
+        select{
+            border: to-rem(2) solid var(--border);
+        }
+    }
+
+    .grupo-cta{
+        margin-top: to-rem(48);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: to-rem(12);
+    }
+
+    .btn--primario{
+        color: var(--neutral-white);
+        background: var(--azul);
+    }
+
+    .btn--secundario{
+        color: var(--azul);
+    }
+}

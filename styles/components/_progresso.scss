@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.progresso {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    margin-bottom: to-rem(32);
+
+    .marcador {
+        height: to-rem(8);
+        width: 100%;
+        background: var(--neutral-white);
+        border-radius: to-rem(16);
+
+        &.atual {
+            background: var(--amarelo);
+        }
+        &.anterior {
+            background: var(--verde-hover);
+        }
+    }
+}

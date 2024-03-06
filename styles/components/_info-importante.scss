@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+.info-importante {
+    display: flex;
+    background: var(--neutral-white);
+    color: var(--neutral-light);
+    padding: to-rem(24) to-rem(20);
+    border-radius: to-rem(32);
+    gap: to-rem(8);
+
+    p {
+        text-align: left;
+    }
+
+    i {
+        font-size: to-rem(32);
+        color: var(--azul);
+    }
+
+    &.--secundaria {
+        background: var(--verde);
+        color: var(--neutral-white);
+
+        i {
+            color: currentColor;
+        }
+    }
+}

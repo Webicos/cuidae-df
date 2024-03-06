@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuidaê — Seu perfil</title>
+  <link rel="stylesheet" href="css/perfil.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./assets/icons/android-chrome-192x192.png">
+  <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+  <meta name="theme-color" content="#01846C" />
+</head>
+<body id="perfil">
+
+
+    <section id="apresentacao" class="tela js--ativo">
+      <div class="container">
+          <div class="tela__cabecalho">
+            <img src="./assets/brand/logo-bg-white.svg" alt="" class="logo">
+          </div>
+          <div class="tela__conteudo">
+            <h2>Entendendo seu perfil</h2>
+            <p>Para melhorar a experiência de uso do aplicativo, iremos fazer algumas perguntas para nos auxiliar o melhor caminho e organização do aplicativo para você.</p>
+            <img src="assets/placeholder/placeholder-perfil-apresentacao.svg" alt="" srcset="">
+          </div>
+          <div class="tela__rodape">
+              <a href="#etapa-1" class="btn btn--primario btn--link">Definir perfil</a>
+              <a href="#privacidade-overlay" class="btn btn--secundario sm btn--interacao">Política de privacidade</a>
+          </div>
+        </div>
+
+        <div id="privacidade-overlay" class="overlay">
+          <button class="overlay__fechar">
+            <i class='bx bxs-x-circle'></i>
+          </button>
+          <div class="overlay__titulo">
+              <h3>Seus dados estão seguros</h3>
+              <p>Para melhorar a experiência de uso do aplicativo, iremos fazer algumas perguntas para nos auxiliar o melhor caminho e organização do aplicativo para você.</p>
+          </div>
+      </div>
+    </section>
+
+    <section id="etapa-1" class="tela">
+      <div class="container">
+          <div class="tela__cabecalho">
+            <div class="progresso">
+                <div class="marcador atual"></div>
+                <div class="marcador"></div>
+            </div>
+            <h2>Suas informações básicas</h2>
+          </div>
+          <div class="tela__conteudo">
+            <label class="input">
+              <p>Data de nascimento</p>
+              <input id="user--nascimento" type="date" name="" id="">
+            </label>
+
+            <label class="input">
+              <p>Gênero</p>
+              <select id="user--estado" type="select" name="" id="">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+              </select>
+            </label>
+
+            <label class="input">
+              <p>Estado</p>
+              <select id="user--estado" type="select" name="" id="">
+                <option value="">Distrito Federal</option>
+              </select>
+            </label>
+
+            <label class="input">
+              <p>Cidade</p>
+              <select id="user--estado" type="select" name="" id="">
+                <option value="">Brasília>
+              </select>
+            </label>
+          </div>
+          <div class="tela__rodape">
+            <a href="#etapa-2" class="btn btn--primario btn--link">Próximo etapa</a>
+          </div>
+      </div>
+    </section>
+
+    <section id="etapa-2" class="tela">
+      <div class="container">
+          <div class="tela__cabecalho">
+            <div class="progresso">
+                <div class="marcador anterior"></div>
+                <div class="marcador atual"></div>
+            </div>
+            <h2>Sobre sua saúde</h2>
+          </div>
+          <div class="tela__conteudo">
+            <label class="input">
+              <p>Possui comorbidade?</p>
+              <select id="user--estado" type="select" name="" id="">
+                <option value="">Não possuo</option>
+                <option value="">Possuo</option>
+              </select>
+            </label>
+            <label class="input">
+              <p>Se sim, qual?</p>
+              <select id="user--estado" type="select" name="" id="">
+                <option value="">Não possuo</option>
+                <option value="">Exemplo de Comorbidade</option>
+              </select>
+            </label>
+          </div>
+          <div class="tela__rodape">
+            <a href="#finalizar" class="btn btn--primario btn--link">Completar perfil</a>
+            <a href="#etapa-1" class="btn btn--secundario btn--link">Voltar etapa</a>
+          </div>
+      </div>
+    </section>
+
+
+    <section id="finalizar" class="tela">
+          <div class="tela__conteudo">
+            <img src="./assets/placeholder/placeholder-area.svg" alt="Cuidaê" class="logo">
+            <h2>Você completou o seu perfil!</h2>
+            <p>Acesse agora os serviços de auxílio e cuidados para sua saúde.</p>
+          </div>
+          
+          <div class="swiper">
+            <div class="servicos__item btn--servico">
+                <i class='bx bxl-google'></i>
+                <h3>Serviço</h3>
+            </div>
+
+            <div class="servicos__item btn--servico">
+              <i class='bx bxl-google'></i>
+              <h3>Serviço</h3>
+          </div>
+
+          <div class="servicos__item btn--servico">
+            <i class='bx bxl-google'></i>
+            <h3>Serviço</h3>
+          </div>
+       </div>
+          <div class="tela__rodape">
+            <a href="painel.html" class="btn btn--primario">Começar</a>
+          </div>
+    </section>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/overlay.js"></script>
+</body>
+</html>

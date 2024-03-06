@@ -1,0 +1,38 @@
+@use "global" as *;
+@use "abstracts" as *;
+@use "components" as *;
+@import "layout";
+
+#perfil {
+    min-height: 100vh;
+    overflow: hidden;
+    .tela {
+    min-height: 100vh;
+
+        background: var(--azul);
+
+        .tela__conteudo {
+            margin-block: to-rem(48);
+            gap: 1.25rem;
+            text-align: center;
+        }
+
+    }
+
+
+    #finalizar{
+
+
+        .tela__conteudo h2{
+            font-size: to-rem(24);
+        }
+        .tela__conteudo, .swiper{
+            padding-inline: to-rem(20);
+        }
+
+        .tela__rodape{
+            margin-top: to-rem(40);
+        }
+
+    }
+}

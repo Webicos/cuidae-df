@@ -1,0 +1,12 @@
+@use "../abstracts/" as *;
+
+.swiper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    display: flex;
+    position: relative;
+    gap: to-rem(8);
+
+    scrollbar-width: none;
+}

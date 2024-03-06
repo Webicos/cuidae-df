@@ -1,0 +1,68 @@
+@use "../abstracts/" as *;
+
+.input {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+    width: 100%;
+
+    p {
+        text-align: left;
+        font-weight: var(--font-w-semibold);
+    }
+
+    input {
+        height: to-rem(48);
+        width: 100%;
+        padding-inline: to-rem(16);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-weight: var(--font-w-medium);
+        border: 2px solid var(--neutral-light);
+        background: var(--neutral-white);
+        border-radius: to-rem(8);
+    }
+
+    select {
+        height: to-rem(48);
+        background: var(--neutral-white);
+        padding: to-rem(8);
+        border-radius: to-rem(8);
+
+        option {
+            width: 100%;
+        }
+    }
+}
+
+.input--checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: to-rem(48);
+    width: 100%;
+    border: 2px solid var(--border);
+    border-radius: to-rem(8);
+    color: var(--neutral-light);
+    padding-inline: to-rem(16);
+    cursor: pointer;
+    user-select: none;
+    transition: border-color var(--transition-1);
+
+    h4 {
+        font-size: to-rem(14);
+        font-weight: var(--font-w-semibold);
+
+        span::after {
+            content: "-";
+            margin-inline: to-rem(4);
+        }
+    }
+
+    &:hover,
+    &.selecionado {
+        border-color: var(--azul);
+    }
+}

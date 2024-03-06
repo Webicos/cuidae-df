@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuidaê — Busque UBS</title>
+  <link rel="stylesheet" href="css/ubs.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./assets/icons/android-chrome-192x192.png">
+  <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+  <meta name="theme-color" content="#01846C" />
+</head>
+<body id="ubs">
+
+  <main>
+    <header>
+      <nav class="usuario-nav">
+          <a href="javascript:history.back()" class="link--mais">
+            <i class='bx bxs-chevron-left-circle'></i>
+            Voltar
+          </a>
+          <i class='bx bxs-user-circle'></i>
+      </nav>
+    </div>
+    </header>
+
+    
+    <iframe id="i_frame" name="i_frame" loading="lazy" src="https://sesdf.maps.arcgis.com/apps/webappviewer/index.html?id=0eb5cdffba98497f91b1c4106ab6f148"></iframe>
+        
+      
+
+  </main>
+
+  <nav class="usuario-menu">
+    <div class="container">
+      <img src="assets/brand/df-logo.svg" class="bandeira-df">
+      <a href="" class="usuario-menu__link">
+        <i class='bx bxs-home-smile'></i>
+        <span>Início</span>
+      </a>
+      <!-- <a href="" class="usuario-menu__link link--atual">
+        <i class='bx bxs-layer' ></i>
+        <span>Serviços</span>
+      </a> -->
+      <a href="" class="usuario-menu__link">
+        <i class='bx bxs-spreadsheet' ></i>
+        <span>Relatórios</span>
+      </a>
+      <a href="" class="usuario-menu__link">
+        <i class='bx bxs-user-badge' ></i>
+        <span>Conta</span>
+      </a>
+
+      <button id="instalar" class="usuario-menu__link" hidden>
+        <i class='bx bxs-cloud-download'></i>
+        <span>Instalar</span>
+      </button>
+    </div>
+  </nav>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/pwa-install.js"></script>
+
+</body>
+</html>

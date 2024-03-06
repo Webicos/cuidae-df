@@ -1,0 +1,81 @@
+@use "global" as *;
+@use "abstracts" as *;
+@use "components" as *;
+@use "layout" as *;
+
+#painel {
+    position: relative;
+    margin-inline: auto;
+    max-width: to-rem(440);
+    background: var(--neutral-white);
+    padding-bottom: to-rem(104);
+
+    header {
+        padding: to-rem(20) to-rem(20) 0;
+    }
+
+    .usuario-dados {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: to-rem(24);
+
+        &__pre {
+            display: block;
+            font-weight: var(--font-w-regular);
+        }
+
+        &__nome {
+            font-size: to-rem(16);
+        }
+
+        i {
+            font-size: to-rem(40);
+            color: var(--azul);
+        }
+    }
+
+    .regiao-dados {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: to-rem(24);
+
+        &__pre {
+            display: block;
+            font-weight: var(--font-w-regular);
+        }
+
+        &__nome {
+            font-size: to-rem(16);
+        }
+    }
+
+    section {
+        padding-top: to-rem(40);
+    }
+
+    .campanha {
+        padding-top: to-rem(24);
+        background: var(--verde);
+
+        &__cta {
+        }
+    }
+
+    .section__cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: to-rem(20);
+        margin-bottom: to-rem(20);
+    }
+
+    .section__swiper {
+        padding-inline: to-rem(20);
+    }
+
+    #apoio {
+        margin-top: to-rem(48);
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuidaê — Usuário</title>
+  <link rel="stylesheet" href="css/configuracao.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./assets/icons/android-chrome-192x192.png">
+  <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+  <meta name="theme-color" content="#01846C" />
+</head>
+<body id="configuracao-conta">
+
+  <header>
+    <nav class="usuario-nav">
+        <a href="javascript:history.back()" class="link--mais">
+          <i class='bx bxs-chevron-left-circle'></i>
+          Voltar
+        </a>
+        <i class='bx bxs-user-circle'></i>
+    </nav>
+    <section class="breadcrumb">
+        <p>Você está: <span><i class='bx bxs-user-badge' ></i> Conta</span></p>
+    </section>
+  </div>
+  </header>
+
+  <main>
+      <div class="config-conteudo">
+        <h3>
+          <i class='bx bxs-user-pin'></i>
+          Informações básicas
+        </h3>
+
+        <label class="input">
+          <p>Seu nome</p>
+          <input type="text" value="Nome do Usuário" disabled>
+        </label>
+
+        <label class="input">
+          <p>Seu e-mail</p>
+          <input type="text" value="usuario@cuidae.com.br" disabled>
+        </label>
+
+        <label class="input">
+          <p>Seu CPF</p>
+          <input type="text" value="000.000.000-00" disabled>
+        </label>
+
+        <label class="input">
+          <p>Data de nascimento</p>
+          <input type="date" value="2001-10-10" disabled>
+        </label>
+
+        <label class="input">
+          <p>Gênero</p>
+          <select type="select">
+            <option>Feminino</option>
+            <option>Masculino</option>
+          </select>
+        </label>
+
+        <label class="input">
+          <p>Estado</p>
+          <select type="select" disabled>
+            <option>Distrito Federal</option>
+          </select>
+        </label>
+
+        <label class="input">
+          <p>Cidade</p>
+          <select type="select" disabled>
+            <option>Brasília</option>
+          </select>
+        </label>
+
+        <div class="grupo-cta">
+          <a href="" class="btn btn--secundario">
+            <i class='bx bxs-cloud-upload'></i>
+            Carregar foto de perfil
+          </a>
+
+          <a href="" class="btn btn--primario">
+            <i class='bx bxs-envelope'></i>
+            Redefinir e-mail
+          </a>
+
+          <a href="" class="btn btn--primario">
+            <i class='bx bx-reset'></i>
+            Redefinir senha
+          </a>
+        </div>
+      </div>
+  </main>
+
+  <nav class="usuario-menu">
+    <div class="container">
+      <img src="assets/brand/df-logo.svg" class="bandeira-df">
+      <a href="painel.html" class="usuario-menu__link">
+        <i class='bx bxs-home-smile'></i>
+        <span>Início</span>
+      </a>
+      <!-- <a href="servicos.html" class="usuario-menu__link " >
+        <i class='bx bxs-layer' ></i>
+        <span>Serviços</span>
+      </a> -->
+      <a href="registros.html" class="usuario-menu__link">
+        <i class='bx bxs-spreadsheet' ></i>
+        <span>Relatórios</span>
+      </a>
+      <a href="configuracao.html" class="usuario-menu__link link--atual">
+        <i class='bx bxs-user-badge' ></i>
+        <span>Conta</span>
+      </a>
+
+      <button id="instalar" class="usuario-menu__link" hidden>
+        <i class='bx bxs-cloud-download'></i>
+        <span>Instalar</span>
+      </button>
+    </div>
+  </nav>
+
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/pwa-install.js"></script>
+
+</body>
+</html>

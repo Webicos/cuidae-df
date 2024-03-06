@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuidaê — Painel</title>
+  <link rel="stylesheet" href="css/painel.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./assets/icons/android-chrome-192x192.png">
+  <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+  <meta name="theme-color" content="#01846C" />
+</head>
+<body id="painel">
+
+  <main>
+    <header>
+      <div class="usuario-dados">
+          <h2>
+            <span class="usuario-dados__pre">Olá,</span>
+            <span class="usuario-dados__nome">Nome do Usuário</span>
+          </h2>
+          <i class='bx bxs-user-circle'></i>
+      </div>
+      <div class="regiao-dados">
+        <h2>
+          <span class="regiao-dados__pre">Região</span>
+          <span class="regiao-dados__nome">Distrito Federal, Brasília</span>
+        </h2>
+        <span class="tag">
+          Cuide-se
+          <i class='bx bx-question-mark'></i>
+        </span>
+    </div>
+    </header>
+
+    <section id="prediagnostico" class="campanha campanha--principal">
+        
+        <h3 class="campanha__titulo">
+          <i class='bx bxs-receipt'></i>
+          Está com sintomas de covid?
+        </h3>
+
+        <a class="campanha__cta" href="prediagnostico.html">Realizar pré-diagnóstico</a>
+    </section>
+
+    <section class="campanhas">
+      <div class="section__cabecalho">
+        <h3>
+          <i class='bx bxs-notification'></i>
+          Campanhas
+        </h3>
+        <a href="campanhas.html" class="link--mais">
+          Acessar todas
+          <i class='bx bxs-chevron-right-circle'></i>
+        </a>
+      </div>
+      <div class="section__swiper swiper">
+        <a href="campanhas-singular.html" class="campanha__item">
+          <h4>Campanha</h4>
+        </a>
+
+        <a href="campanhas-single.html" class="campanha__item">
+          <h4>Campanha</h4>
+        </a>
+
+        <a href="campanhas-single.html" class="campanha__item">
+          <h4>Campanha</h4>
+        </a>
+      </div>
+    </section>
+
+    <section class="servicos">
+      <div class="section__cabecalho">
+        <h3>
+          <i class='bx bxs-layer-plus'></i>
+          Serviços
+        </h3>
+      </div>
+
+      <div class="section__swiper swiper">
+        <a href="ubs.html" class="servico__item">
+          <h4>UBS Próximas</h4>
+        </a>
+
+        <a href="registros.html" class="servico__item">
+          <h4>Registros</h4>
+        </a>
+
+        <a href="" class="servico__item">
+          <h4>Serviço</h4>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- <section id="apoio" class="campanha campanha--principal">
+        
+      <h3 class="campanha__titulo">
+        <i class='bx bxs-donate-heart' ></i>
+          Estamos aqui para te apoiar
+      </h3>
+
+      <a class="campanha__cta" href="prediagnostico.html">Conversar com especialista</a>
+  </section> -->
+
+  </main>
+
+  <nav class="usuario-menu">
+    <div class="container">
+      <img src="assets/brand/df-logo.svg" class="bandeira-df">
+      <a href="" class="usuario-menu__link link--atual">
+        <i class='bx bxs-home-smile'></i>
+        <span>Início</span>
+      </a>
+      <!-- <a href="servicos.html" class="usuario-menu__link">
+        <i class='bx bxs-layer' ></i>
+        <span>Serviços</span>
+      </a> -->
+      <a href="registros.html" class="usuario-menu__link">
+        <i class='bx bxs-spreadsheet' ></i>
+        <span>Relatórios</span>
+      </a>
+      <a href="configuracao.html" class="usuario-menu__link">
+        <i class='bx bxs-user-badge' ></i>
+        <span>Conta</span>
+      </a>
+
+      <button id="instalar" class="usuario-menu__link" hidden>
+        <i class='bx bxs-cloud-download'></i>
+        <span>Instalar</span>
+      </button>
+    </div>
+  </nav>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/pwa-install.js"></script>
+</body>
+</html>

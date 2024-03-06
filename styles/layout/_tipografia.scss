@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+p, a, span{
+    font-size: to-rem(14);
+}
+
+h1, h2{
+    font-size: to-rem(20);
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    font-size: to-rem(12);
+    text-transform: uppercase;
+    letter-spacing: 0.025rem;
+    text-align: center;
+    font-weight: var(--font-w-bold);
+    gap: to-rem(4);
+
+        i{
+            font-size: to-rem(16);
+            color: var(--verde);
+        }
+}

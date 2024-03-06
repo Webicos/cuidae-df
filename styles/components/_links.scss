@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.link--mais{
+        display: flex;
+        align-items: center;
+        font-size: to-rem(12);
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: var(--font-w-bold);
+        gap: to-rem(4);
+        color: var(--neutral-dark);
+    
+            i{
+                font-size: to-rem(16);
+                color: var(--azul);
+            }
+}

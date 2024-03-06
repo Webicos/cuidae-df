@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    min-height: to-rem(480);
+    background: var(--neutral-white);
+    padding-block: to-rem(56);
+    padding-inline: to-rem(40);
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2rem;
+    transition: 0.3s ease-in;
+
+    &.js--ativo {
+        bottom: 0;
+        transition: 0.3s ease-in;
+    }
+
+    &__fechar {
+        width: 100%;
+        text-align: right;
+        i {
+            font-size: 2rem;
+            color: var(--verde);
+        }
+    }
+
+    &__titulo {
+        text-align: center;
+        h3 {
+            font-size: 1.25rem;
+            color: var(--neutral-dark);
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: var(--neutral-light);
+            font-size: to-rem(14);
+        }
+    }
+}

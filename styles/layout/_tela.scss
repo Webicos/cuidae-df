@@ -1,0 +1,68 @@
+@use "../abstracts/" as *;
+
+html {
+    background: #eaeaea;
+}
+
+body {
+    max-width: to-rem(440);
+    margin-inline: auto;
+    min-height: calc(100vh - to-rem(48));
+}
+
+.tela {
+    width: 100%;
+    margin-inline: auto;
+    position: absolute;
+    top: 0;
+    max-width: to-rem(440);
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+
+    > * {
+        color: var(--neutral-white);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        letter-spacing: -0.025rem;
+    }
+
+    p {
+        font-size: to-rem(14);
+    }
+
+    &.js--ativo {
+        visibility: visible;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        padding-block: to-rem(48);
+        padding-inline: 1.25rem;
+        flex-flow: column;
+    }
+
+    &__cabecalho,
+    &__conteudo,
+    &__rodape {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        max-width: 100%;
+        gap: 0.75rem;
+    }
+
+    &__conteudo {
+        width: 100%;
+    }
+}

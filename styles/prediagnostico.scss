@@ -1,0 +1,192 @@
+@use "global" as *;
+@use "abstracts" as *;
+@use "components" as *;
+@import "layout";
+
+#prediagnostico {
+    .tela {
+        min-height: calc(100vh - to-rem(40));
+
+        background: var(--neutral-white);
+
+        &.etapa {
+            .tela__cabecalho {
+                h2 {
+                    font-size: to-rem(16);
+                    text-align: center;
+                }
+            }
+
+            .tela__conteudo {
+                height: to-rem(288);
+                overflow-y: auto;
+                padding-inline: to-rem(12);
+                padding-top: to-rem(12);
+
+                .input--checkbox {
+                    min-height: to-rem(48);
+                }
+            }
+        }
+
+        &__rodape {
+            position: relative;
+            bottom: auto;
+            margin-top: to-rem(32);
+        }
+
+        &__cabecalho {
+            width: 100%;
+            padding-inline: to-rem(20);
+
+            h2 {
+                color: var(--neutral-dark);
+                margin-bottom: to-rem(32);
+            }
+
+            .marcador {
+                background: #f0f0f0;
+
+                &.atual {
+                    background: var(--verde);
+                }
+                &.anterior {
+                    background: var(--azul);
+                }
+            }
+
+            .progresso {
+                width: 100%;
+            }
+        }
+
+        .btn--primario {
+            background: var(--azul);
+            color: var(--neutral-white);
+        }
+
+        .btn--secundario {
+            color: var(--azul);
+        }
+    }
+
+    #apresentacao {
+        background: var(--verde);
+
+        .link--mais {
+            color: var(--neutral-white);
+            padding: to-rem(8) to-rem(20);
+            margin-bottom: to-rem(20);
+            border: to-rem(2) solid currentColor;
+            border-radius: to-rem(60);
+            i {
+                color: currentColor;
+            }
+        }
+
+        .tela__conteudo {
+            text-align: center;
+
+            img {
+                margin-bottom: to-rem(20);
+                max-width: to-rem(120);
+            }
+        }
+
+        .tela__rodape {
+            .btn {
+                background: var(--neutral-white);
+                color: var(--azul);
+            }
+        }
+
+        .info-importante {
+            margin-top: to-rem(20);
+        }
+    }
+
+    #finalizar {
+        > * {
+            color: var(--neutral-dark);
+        }
+
+        .tela__conteudo {
+            padding-inline: to-rem(32);
+        }
+
+        .tela__rodape {
+            margin-top: to-rem(48);
+        }
+
+        .btn--secundario {
+            color: var(--azul);
+            border-color: currentColor;
+        }
+
+        .resultado__img-grupo {
+            display: flex;
+            gap: to-rem(20);
+        }
+        .resultado {
+            padding-top: to-rem(40);
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            h2,
+            h3 {
+                padding-inline: to-rem(32);
+                text-transform: none;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: to-rem(16);
+                font-weight: var(--font-w-semibold);
+            }
+
+            h3 {
+                font-size: to-rem(14);
+                margin-bottom: to-rem(32);
+            }
+
+            &__img {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                height: to-rem(144);
+                width: to-rem(144);
+                background: #c8d2e4;
+                border-radius: to-rem(8);
+                margin-inline: auto;
+                margin-block: to-rem(32);
+                gap: to-rem(16);
+                justify-content: center;
+
+                h3 {
+                    margin: 0;
+                }
+            }
+
+            &__swiper {
+                padding-inline: to-rem(20);
+
+                .cuidado__item {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    gap: to-rem(16);
+                    min-width: to-rem(144);
+                    height: to-rem(96);
+                    background: #c8d2e4;
+                    border-radius: to-rem(8);
+                    padding-inline: to-rem(16);
+
+                    h4 {
+                        font-size: to-rem(14);
+                    }
+                }
+            }
+        }
+    }
+}

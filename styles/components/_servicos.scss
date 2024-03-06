@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.servico__item{
+    min-height: to-rem(96);
+    min-width: to-rem(144);
+    display: flex;
+    align-items: end;
+    border-radius: to-rem(8);
+    padding: to-rem(20);
+    background: var(--azul);
+    color: var(--neutral-white);
+
+    h4{
+        font-weight: var(--font-w-semibold);
+    }
+}

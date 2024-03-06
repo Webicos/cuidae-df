@@ -1,0 +1,16 @@
+@use "global" as *;
+@use "abstracts" as *;
+@use "components" as *;
+@use "layout" as *;
+
+#ubs {
+    iframe {
+        max-width: 100%;
+        width: 100%;
+        min-height: calc(100vh - to-rem(104));
+    }
+
+    .jimu-pocket-panel {
+        background: var(--amarelo) !important;
+    }
+}

@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+.breadcrumb {
+    padding-block: to-rem(12);
+    width: 100%;
+    background: var(--verde);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: to-rem(12);
+
+    p {
+        color: var(--neutral-white);
+    }
+
+    h2{
+        padding-inline: to-rem(32);
+        color: var(--neutral-white);
+        text-align: center;
+        font-size: to-rem(18);
+        font-weight: var(--font-w-semibold);
+    }
+
+    &:has(h2){
+        padding-block: to-rem(32);
+    }
+}

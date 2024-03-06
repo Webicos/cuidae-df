@@ -1,0 +1,90 @@
+@use "global" as *;
+@use "abstracts" as *;
+@use "components" as *;
+@import "layout/tela";
+
+#onboarding {
+    min-height: 100%;
+    background: var(--verde);
+    overflow: hidden;
+    padding-bottom: to-rem(104);
+
+    .tela__conteudo {
+        margin-block: to-rem(48);
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .overlay {
+        &__registrar {
+            display: flex;
+            flex-flow: column;
+            gap: 0.75rem;
+
+            .btn--secundario {
+                border-color: var(--azul);
+                color: var(--neutral-dark);
+
+                i {
+                    color: var(--verde);
+                }
+            }
+        }
+
+        .spacer-inline {
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            background: var(--neutral-white);
+            position: relative;
+            width: 100%;
+
+            span {
+                display: block;
+                text-align: center;
+                width: fit-content;
+                padding-inline: to-rem(8);
+                z-index: 2;
+                color: var(--neutral-light);
+                background: var(--neutral-white);
+                font-size: to-rem(12);
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                width: 50%;
+                height: 1px;
+                background: #cdcdcd;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &::before {
+                left: 0;
+            }
+            &::after {
+                right: 0;
+            }
+        }
+
+        &__acessar {
+            display: flex;
+            flex-flow: column;
+            gap: 0.75rem;
+            text-align: center;
+
+            p {
+                font-size: to-rem(12);
+                color: var(--neutral-light);
+            }
+
+            .btn--primario {
+                background: var(--azul);
+                color: var(--neutral-white);
+            }
+        }
+    }
+}

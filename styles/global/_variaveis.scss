@@ -1,0 +1,26 @@
+:root {
+    --verde: #01846c;
+    --verde-hover: #08cb6f;
+    --azul: #006bb4;
+    --amarelo: #ffd600;
+    --neutral-dark: #1c2840;
+    --neutral-light: #4e5f81;
+    --neutral-white: #fff;
+    --neutral-gray-light: #e9f0fc;
+    --border: #c4cbd9;
+
+    --font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    --font-w-regular: 400;
+    --font-w-medium: 500;
+    --font-w-semibold: 600;
+    --font-w-bold: 700;
+    --font-w-black: 800;
+
+    --transition-1: 0.5s ease-in-out;
+}
+
+* {
+    font-family: var(--font-sans);
+}

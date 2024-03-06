@@ -1,0 +1,110 @@
+@use "global" as *;
+@use "abstracts" as *;
+@use "components" as *;
+@import "layout";
+
+#registros {
+    min-height: calc(100vh - to-rem(40));
+    background: var(--neutral-gray-light);
+    padding-bottom: to-rem(104);
+
+    .registros-secao {
+        margin-top: to-rem(24);
+        padding-inline: to-rem(20);
+
+        .info-importante {
+            margin-top: to-rem(40);
+        }
+    }
+
+    .registros-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: to-rem(16) to-rem(12);
+        background: var(--neutral-white);
+        border-radius: to-rem(8);
+        margin-block: to-rem(12);
+
+        h3 {
+            color: var(--neutral-dark);
+            line-height: 100%;
+            span {
+                font-size: inherit;
+                color: var(--neutral-light);
+                font-size: to-rem(10);
+            }
+        }
+
+        i {
+            font-size: to-rem(20);
+            color: var(--azul);
+        }
+    }
+}
+
+.registros-tag {
+    width: to-rem(72);
+    text-align: center;
+    height: fit-content;
+    text-transform: uppercase;
+    background: var(--azul);
+    color: var(--neutral-white);
+    padding: to-rem(6) to-rem(6);
+    font-size: to-rem(10);
+    border-radius: to-rem(8);
+    line-height: 90%;
+    font-weight: var(--font-w-bold);
+
+    &.tag--recente {
+        background: #fad308;
+        color: var(--neutral-dark);
+    }
+
+    &.tag--encerrado {
+        background: var(--verde);
+        color: var(--neutral-white);
+    }
+}
+
+#registros-singular {
+    min-height: calc(100vh - to-rem(40));
+    background: var(--neutral-white);
+    padding-bottom: to-rem(104);
+    position: relative;
+
+    .registros__questionario,
+    .registros__descricao {
+        padding: to-rem(32) to-rem(20) 0;
+
+        h3 {
+            margin-bottom: to-rem(20);
+            color: var(--neutral-dark);
+        }
+
+        > p {
+            padding-block-end: to-rem(12);
+            line-height: 1.75;
+            color: var(--neutral-light);
+        }
+    }
+
+    .registros__acoes {
+        position: fixed;
+        width: 100%;
+        max-width: to-rem(440);
+        bottom: 6rem;
+        padding-inline: to-rem(20);
+        display: flex;
+        justify-content: center;
+
+        .btn--primario {
+            color: var(--neutral-white);
+            background: rgba(1, 132, 108, 0.84);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(1, 132, 108, 0.3);
+        }
+    }
+}

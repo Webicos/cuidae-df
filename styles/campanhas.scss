@@ -1,0 +1,64 @@
+@use "global" as *;
+@use "abstracts" as *;
+@use "components" as *;
+@use "layout" as *;
+
+#campanhas {
+    background: var(--neutral-white);
+    padding-bottom: to-rem(96);
+    min-height: calc(100vh - to-rem(40));
+
+    .campanha {
+        margin-block: to-rem(24);
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        &__titulo {
+            font-size: to-rem(16);
+            text-transform: none;
+            letter-spacing: 0;
+        }
+    }
+}
+
+#campanhas-single {
+    padding-bottom: to-rem(96);
+    background: var(--neutral-white);
+
+    .campanha__img {
+        display: block;
+        height: to-rem(200);
+        width: calc(100% - to-rem(40));
+        background: var(--azul);
+        margin-inline: auto;
+        margin-block: to-rem(20);
+        border-radius: to-rem(8);
+    }
+
+    .campanha__conteudo {
+        padding-inline: to-rem(20);
+        display: flex;
+        flex-flow: column;
+        gap: to-rem(16);
+
+        .pre-titulo {
+            text-transform: uppercase;
+            letter-spacing: 0.025rem;
+            color: var(--neutral-light);
+
+            i {
+                color: var(--verde);
+            }
+        }
+
+        > h2 {
+            color: var(--neutral-dark);
+        }
+
+        > p {
+            display: block;
+            line-height: 1.75;
+            color: var(--neutral-light);
+        }
+    }
+}
